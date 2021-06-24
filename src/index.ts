@@ -13,8 +13,6 @@
 
 import { STATUS_CODES  } from 'http'
 
-type originType = { status?: number, statusCode?: number } | null
-
 /**
  * HttpError
  *
@@ -31,7 +29,7 @@ class HttpError extends Error  {
   public code: number|string
   public status: string
   public message: string
-  public origin: originType
+  public origin: any
   public expose: boolean
 
   // so much arity going on ~_~
@@ -39,7 +37,7 @@ class HttpError extends Error  {
     /* istanbul ignore next */
     code: number|string = 500,
     message = '',
-    origin: originType = null,
+    origin: any = null,
     expose = false
   ) {
     super()
