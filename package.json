@@ -1,6 +1,6 @@
 {
   "name": "@macchiatojs/http-error",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Modern Http Error.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
